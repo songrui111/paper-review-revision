@@ -8,13 +8,19 @@
 
 ### DeepSeek Harness
 
-命令行：
+已发布到 npm，装的是预构建包，不经过源码构建：
+
+```bash
+dsh plugin add dsh-paper-review-revision
+```
+
+想跟仓库当前 `main` 走，也可以直接从 GitHub 装：
 
 ```bash
 dsh plugin add github:songrui111/paper-review-revision
 ```
 
-桌面端：**插件 → 添加插件**，填入同一条规格 `github:songrui111/paper-review-revision`。装好后新开一个会话，技能就会出现在技能目录里。
+桌面端：**插件 → 添加插件**，填入上面任一规格。装好后新开一个会话，技能就会出现在技能目录里。
 
 ### Codex
 

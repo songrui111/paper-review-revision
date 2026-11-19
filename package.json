@@ -1,6 +1,6 @@
 {
   "name": "dsh-paper-review-revision",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DeepSeek Harness skill bundle for four-round academic review and revision of engineering and applied-mathematics papers.",
   "type": "module",
   "main": "./index.js",
