@@ -1,0 +1,47 @@
+{
+  "name": "dsh-paper-review-revision",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness skill bundle for four-round academic review and revision of engineering and applied-mathematics papers.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./assets/icon.png"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "skills",
+    "locale",
+    "assets",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent-skill",
+    "academic-review",
+    "peer-review",
+    "ieee",
+    "latex"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songrui111/paper-review-revision.git"
+  },
+  "homepage": "https://github.com/songrui111/paper-review-revision",
+  "bugs": "https://github.com/songrui111/paper-review-revision/issues",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

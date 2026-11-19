@@ -1,0 +1,10 @@
+# Opt-in DeepSeek Harness skill provider for the packaged paper-review-revision skill.
+# The skill root is resolved from this package's installed identity anchored at the
+# DSH profile (Loader baseUrl), never by concatenating a path onto baseUrl.
+- insert:
+    - id: paper-review-revision-skill-filesystem
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      config:
+        providerName: paper-review-revision
+        includeDefaultRoots: false
+        bundledSkillDir: !!js process.getBuiltinModule('node:path').join(process.getBuiltinModule('node:path').dirname(process.getBuiltinModule('node:module').createRequire(baseUrl).resolve('dsh-paper-review-revision/package.json')), 'skills')
