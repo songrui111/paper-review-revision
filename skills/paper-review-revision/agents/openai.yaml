@@ -1,4 +1,4 @@
 interface:
   display_name: "论文四轮审查与修订"
-  short_description: "审查论文逻辑与实验，逐式复核数学证明，逐句润色英文并终审修订稿。"
-  default_prompt: "用 $paper-review-revision 对我提供的论文执行完整四轮审查与修订。"
+  short_description: "双智能体依序完成学术审查、数学复核、英文逐句编辑和修订稿终审。"
+  default_prompt: "用 $paper-review-revision 对我上传的论文运行完整四轮双智能体审修工作流。"
